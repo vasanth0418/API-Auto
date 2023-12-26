@@ -1,0 +1,163 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-12-26T21:20:25.320Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.api.stepdefinition.Hooks.testStart(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Authentication with API",
+        "description": "",
+        "id": "authentication-api;authentication-with-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 328000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User wants to set base URL for \"Login\" API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.api.stepdefinition.CognisurestepDef.userLaunchesTheBaseURL(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User wants to set \"grant type\" as for the form parameter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"grant type\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.api.stepdefinition.CognisurestepDef.userWantsToSetFromParameters(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User wants to set \"username\" as for the form parameter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.api.stepdefinition.CognisurestepDef.userWantsToSetFromParameters(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User wants to set \"password\" as for the form parameter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.api.stepdefinition.CognisurestepDef.userWantsToSetFromParameters(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1785000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User sends an authentication request with username and password",
+            "match": {
+              "location": "com.api.stepdefinition.CognisurestepDef.userSendsAuthenticationRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Validates the expected response 200 from the API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "com.api.stepdefinition.CognisurestepDef.userValidatesTheExectedStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 648000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User verifies the access token, token type, expires in, and user name should be available in the response",
+            "match": {
+              "location": "com.api.stepdefinition.CognisurestepDef.userVerifiesTheDisplayOfExectedResponse()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bookerAPI"
+          }
+        ]
+      }
+    ],
+    "name": "Authentication API",
+    "description": "",
+    "id": "authentication-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@bookerAPI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

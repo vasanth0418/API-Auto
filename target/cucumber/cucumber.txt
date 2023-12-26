@@ -1,0 +1,10 @@
+
+@bookerAPI
+Scenario Outline: Authentication with API                                                                       # src/test/resources/features/Login.feature:15
+  Given User wants to set base URL for "Login" API                                                              # com.api.stepdefinition.CognisurestepDef.userLaunchesTheBaseURL(java.lang.String)
+  And User wants to set "grant type" as for the form parameter                                                  # com.api.stepdefinition.CognisurestepDef.userWantsToSetFromParameters(java.lang.String)
+  And User wants to set "username" as for the form parameter                                                    # com.api.stepdefinition.CognisurestepDef.userWantsToSetFromParameters(java.lang.String)
+  And User wants to set "password" as for the form parameter                                                    # com.api.stepdefinition.CognisurestepDef.userWantsToSetFromParameters(java.lang.String)
+  When User sends an authentication request with username and password                                          # com.api.stepdefinition.CognisurestepDef.userSendsAuthenticationRequest()
+  Then User Validates the expected response 200 from the API                                                    # com.api.stepdefinition.CognisurestepDef.userValidatesTheExectedStatusCode(int)
+  And User verifies the access token, token type, expires in, and user name should be available in the response # com.api.stepdefinition.CognisurestepDef.userVerifiesTheDisplayOfExectedResponse()
